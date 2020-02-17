@@ -10,7 +10,7 @@ import BottomRow from "./BottomRow";
     const [countHome, setcountHome] = useState(numberHome);
   
     const numberAway = 0;
-    const [countAway, setcountAway] = useState(numberAway);
+    const [countAway, setcountAway] = useState(numberAway);  
 
   return (
     <div className="container">
@@ -39,8 +39,8 @@ import BottomRow from "./BottomRow";
         </div>
         <div className="awayButtons">
           <button className="awayButtons__touchdown" onClick={() => setcountAway(countAway + 7)}>Away Touchdown</button>
-          <button className="awayButtons__fieldGoal" onClick={() => setcountAway(countAway + 7)}>Away Field Goal</button>
-        </div>
+          <button className="awayButtons__fieldGoal" onClick={() => setcountAway(countAway + 3)}>Away Field Goal</button>
+        </div>        
       </section>
     </div>
   );
